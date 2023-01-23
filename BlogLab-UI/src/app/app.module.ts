@@ -28,6 +28,7 @@ import{ToastrModule} from 'ngx-toastr'
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { FormsModule , ReactiveFormsModule } from '@angular/forms';
+import { TypeaheadModule } from 'ngx-bootstrap/typeahead';
 
 @NgModule({
   declarations: [
@@ -60,8 +61,8 @@ import { FormsModule , ReactiveFormsModule } from '@angular/forms';
       positionClass:'toast-bottom-right'
     }),
     BsDropdownModule.forRoot(),
-    CollapseModule.forRoot()
- 
+    CollapseModule.forRoot(),
+    TypeaheadModule.forRoot()
   ],
   providers: [
     HttpClient,
